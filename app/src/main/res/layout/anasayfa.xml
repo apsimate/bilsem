@@ -1,0 +1,91 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#75B7E5">
+
+
+    <!-- Hoşgeldiniz sloganı -->
+    <TextView
+        android:id="@+id/tvSlogan"
+        android:layout_width="331dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="32dp"
+        android:background="#A9C218"
+        android:backgroundTint="#18FFFF"
+        android:backgroundTintMode="src_atop"
+        android:fallbackLineSpacing="false"
+        android:hapticFeedbackEnabled="false"
+        android:text="Hoşgeldiniz! Kan Vermeyi Teşvik Edin"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Giriş Yap ve Kayıt Ol butonları -->
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvSlogan">
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnGirisYap"
+        android:layout_width="116dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="582dp"
+        android:background="#D39D3F"
+        android:backgroundTintMode="add"
+        android:text="Giriş Yap"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnKayitOl"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnKayitOl"
+        android:layout_width="123dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="75dp"
+        android:background="#D39D3F"
+        android:backgroundTintMode="add"
+        android:text="Kayıt Ol"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnGirisYap"
+        app:layout_constraintTop_toBottomOf="@+id/tvSlogan" />
+
+    <Button
+        android:id="@+id/tweetButton"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="124dp"
+        android:layout_weight="1"
+        android:text="Tweet Gönder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnKayitOl" />
+
+    <!-- Sağlıkla ilgili haber akışları veya içerikler -->
+    <!-- Burada RecyclerView veya ListView gibi bir bileşen kullanabilirsiniz -->
+    <!-- Bileşenin Constraint'lerini ayarlayarak konumunu belirleyebilirsiniz -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
