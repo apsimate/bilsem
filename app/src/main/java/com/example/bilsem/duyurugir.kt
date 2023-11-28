@@ -7,10 +7,10 @@ import twitter4j.TwitterFactory
 import twitter4j.conf.ConfigurationBuilder
 
 class TwitterHelper {
-    private val consumerKey = "0sFBgLGKWTxWnFQ9MhRhrvoE4"
-    private val consumerSecret = "B64cv70f0OAMHyNoj1FiXd0Gdvbz9qCIcaRe9cCjFoYGdelfS8"
-    private val accessToken = "1653326728654213127-W9ectGqzpjwPLxJRFe9QwCImdkxkiT"
-    private val accessTokenSecret = "nupbbH50r1F4B6tdqzylTnEgYWRKELeRvQUVOr1adYU45"
+    private val consumerKey = ""
+    private val consumerSecret = ""
+    private val accessToken = "-"
+    private val accessTokenSecret = ""
 
     fun sendTweet() {
         val cb = ConfigurationBuilder()
